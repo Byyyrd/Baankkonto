@@ -2,12 +2,16 @@ package com.company;
 
 public class Bankkonto {
     private double kontostand;
+    private String kontoString;
     public void veraendereKontostand(double betrag){
         kontostand += betrag;
-        kontostand = ((int)(kontostand * 10))/10;
+        String kontoString = Double.toString(kontostand);
+        char[] chars = kontoString.toCharArray();
+        char[] charss = chars[]
     }
 
     public double getKontostand() {
         return kontostand;
     }
+
 }
